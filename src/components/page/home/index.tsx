@@ -71,14 +71,12 @@ export default function Home() {
         {/* Text content */}
         <div className="max-w-xl md:max-w-2xl text-center md:text-left">
           <h1 className="text-3xl sm:text-4xl md:text-6xl font-extrabold leading-tight tracking-tight">
-            Meet{" "}
+            Iathuhlang ia {""}
             <span className="text-indigo-600">{env.NEXT_PUBLIC_APP_NAME}</span>
-            <br /> Your Smart Companion 🚀
+            <br /> U Nongiarap Baphylla jong phi 🚀
           </h1>
           <p className="mt-4 sm:mt-6 text-base sm:text-lg md:text-xl text-gray-600 dark:text-gray-300 leading-relaxed max-w-md md:max-w-none mx-auto md:mx-0">
-            A modern mobile app designed to help you manage tasks, stay
-            productive, and simplify your digital life — fast, secure, and
-            beautiful.
+            Ka app mobile kaba mynta kaba la shna ban iarap ia phi ban pyniaid ia ki kam, ban long bha ha ka jingtrei, bad ban pynjem ia ka jingim digitale jong phi — kloi, shngain, bad itynnad.
           </p>
 
           {/* Email form */}
@@ -97,7 +95,7 @@ export default function Home() {
                       <Input
                         {...field}
                         aria-invalid={!!form.formState.errors.email}
-                        placeholder="Enter your email to get the app"
+                        placeholder="Tep ia ka email jong phi ban ioh ia ka app"
                         type="email"
                         autoComplete="email"
                         className="h-14 border border-indigo-500 placeholder:text-gray-400 dark:placeholder:text-gray-500 w-full"
@@ -109,7 +107,7 @@ export default function Home() {
                       </FormMessage>
                     ) : (
                       <FormDescription>
-                        Enter your email to get the app
+                        Tep ia ka email jong phi ban ioh ia ka app
                       </FormDescription>
                     )}
                   </FormItem>
@@ -123,11 +121,11 @@ export default function Home() {
                 className="flex items-center w-full justify-center py-8 px-8 text-white bg-indigo-600 hover:bg-indigo-700 text-lg font-semibold rounded-lg min-w-[140px] transition shrink-0"
               >
                 {isPending ? (
-                  "Downloading"
+                  "Ka dang download"
                 ) : (
                   <>
                     <DownloadIcon className="mr-2" />
-                    Download App
+                    Download ia ka App
                   </>
                 )}
               </Button>
@@ -139,7 +137,7 @@ export default function Home() {
         <div className="flex justify-center md:justify-end w-full max-w-md md:max-w-lg mx-auto">
           <Image
             src={images[imageIndex]}
-            alt="App mockup"
+            alt="Ka dur pynshai jong ka App"
             width={600}
             height={1200}
             priority

@@ -21,17 +21,17 @@ export const Footer = () => {
           <ul className="flex flex-wrap items-center mb-6 text-sm font-medium text-gray-500 sm:mb-0 dark:text-gray-400">
             <li>
               <Link href="#showCase" className="hover:underline me-4 md:me-6">
-                Show case
+                Pyni Jingtrei
               </Link>
             </li>
             <li>
               <Link href="#about" className="hover:underline me-4 md:me-6">
-                About
+                Shaphang
               </Link>
             </li>
             <li>
               <Link href="#contact" className="hover:underline">
-                Contact
+                Kren bad ngi
               </Link>
             </li>
           </ul>
@@ -42,7 +42,7 @@ export const Footer = () => {
           <Link href="https://flowbite.com/" className="hover:underline">
             Pixel-Thread™
           </Link>
-          . All Rights Reserved.
+          . Ki hok baroh ki dei jong ngi.
         </span>
       </div>
     </footer>

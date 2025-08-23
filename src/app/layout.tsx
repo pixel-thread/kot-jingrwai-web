@@ -1,6 +1,9 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
+import { MainProvider } from "@/components/provider";
+import Head from "next/head";
+import { Link } from "lucide-react";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -23,11 +26,24 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
+    <html data-theme="light" lang="en">
+      <Head>
+        <title>Kot Jingrwai</title>
+        <meta
+          name="description"
+          content="MyApp helps you stay productive, connected, and secure. Available on iOS and Android."
+        />
+        <meta property="og:title" content="MyApp – Smart Productivity App" />
+        <meta
+          property="og:description"
+          content="Download MyApp today and supercharge your productivity with a seamless, modern experience."
+        />
+        <meta property="og:image" content="/preview.png" />
+      </Head>
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
-        {children}
+        <MainProvider>{children}</MainProvider>
       </body>
     </html>
   );

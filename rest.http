@@ -1,12 +1,9 @@
 @MY_TOKEN_NAME = my_token_value
 
 
-###
+### 
 
-@uuid = verse
-
-
-###
+# @name get verse
 
 GET {{NEXT_PUBLIC_API_URL}}/verse HTTP/1.1
 Accept: application/json
@@ -67,10 +64,10 @@ Content-Type: application/json
 ### 
 
 
-###
+### 
 
 # @name App user
 
-GET {{NEXT_PUBLIC_API_URL}}/version/user?version={{uuid}} HTTP/1.1
+GET {{NEXT_PUBLIC_API_URL}}/version/user HTTP/1.1
 Accept: application/json
 Content-Type: application/json

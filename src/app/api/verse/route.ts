@@ -4,7 +4,6 @@ import { getVerse } from "@/services/verse/getVerse";
 import { handleApiErrors } from "@/utils/errors/handleApiErrors";
 import http from "@/utils/http";
 import { logger } from "@/utils/logger";
-import { requiredSuperAdminRole } from "@/utils/middleware/requiredSuperAdminRole";
 import { ErrorResponse, SuccessResponse } from "@/utils/next-response";
 
 // Fetch random verse from API
@@ -33,7 +32,6 @@ const isVerse = (verse: string | null): boolean => {
 
 export async function GET(request: Request) {
   try {
-    await requiredSuperAdminRole(request);
     logger.info("Fetching random verse");
     const response = await randomVerse();
 

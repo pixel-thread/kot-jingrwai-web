@@ -9,15 +9,16 @@ export async function GET(request: Request) {
     const searchParams = new URL(request.url).searchParams;
 
     const versionId = searchParams.get("version");
+    let installUser;
 
-    const installUser = await prisma.appUser.findMany({
-      where: {
-        version: {
-          id: versionId || "",
-        },
-      },
-    });
+    if (versionId) {
+      installUser = await prisma.appUser.findMany({
+        where: { version: { id: versionId || "" } },
+      });
+    }
+
     const downloadUser = await getDownloadUsers();
+
     return SuccessResponse({
       message: "Kot Users",
       data: {

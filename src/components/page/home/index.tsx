@@ -71,12 +71,11 @@ export default function Home() {
         {/* Text content */}
         <div className="max-w-xl md:max-w-2xl text-center md:text-left">
           <h1 className="text-3xl sm:text-4xl md:text-6xl font-extrabold leading-tight tracking-tight">
-            Iathuhlang ia {""}
+            Ngi wanrah sha phi ia ka {""}
             <span className="text-indigo-600">{env.NEXT_PUBLIC_APP_NAME}</span>
-            <br /> U Nongiarap Baphylla jong phi 🚀
           </h1>
           <p className="mt-4 sm:mt-6 text-base sm:text-lg md:text-xl text-gray-600 dark:text-gray-300 leading-relaxed max-w-md md:max-w-none mx-auto md:mx-0">
-            Ka app mobile kaba mynta kaba la shna ban iarap ia phi ban pyniaid ia ki kam, ban long bha ha ka jingtrei, bad ban pynjem ia ka jingim digitale jong phi — kloi, shngain, bad itynnad.
+            Ka app mobile ka ban iarap ia phi haba phi donkam ia ka kot jingrwai, kaba suk bad kloi ban pyndonkam lada phi klet ban rah ia ka kot jingrwai.
           </p>
 
           {/* Email form */}
@@ -95,7 +94,7 @@ export default function Home() {
                       <Input
                         {...field}
                         aria-invalid={!!form.formState.errors.email}
-                        placeholder="Tep ia ka email jong phi ban ioh ia ka app"
+                        placeholder="Email"
                         type="email"
                         autoComplete="email"
                         className="h-14 border border-indigo-500 placeholder:text-gray-400 dark:placeholder:text-gray-500 w-full"
@@ -107,7 +106,7 @@ export default function Home() {
                       </FormMessage>
                     ) : (
                       <FormDescription>
-                        Tep ia ka email jong phi ban ioh ia ka app
+                        Type ia ka email jong phi ban ioh ia ka app
                       </FormDescription>
                     )}
                   </FormItem>

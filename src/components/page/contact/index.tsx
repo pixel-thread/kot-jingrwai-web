@@ -113,7 +113,7 @@ export const Contact = () => {
       {/* Contact Information */}
       <section className="max-w-4xl mx-auto bg-white dark:bg-gray-800 rounded-xl shadow-lg overflow-hidden">
         <h2 className="text-3xl font-extrabold px-6 pt-8 pb-4 border-b border-gray-200 dark:border-gray-700">
-          Ka Jingtip Jingkren
+          Kumno ban contact ia ngi
         </h2>
         <div>
           <ContactItem

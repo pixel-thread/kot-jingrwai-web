@@ -34,7 +34,7 @@ const ContactItem = ({
       className={`w-full text-left border-gray-200 dark:border-gray-800 p-4 ${
         !isLast ? "border-b" : ""
       } flex items-center space-x-4 hover:bg-gray-100 dark:hover:bg-gray-900 transition`}
-      aria-label={`Contact via ${title}`}
+      aria-label={`Kren lyngba ${title}`}
       type="button"
     >
       <div className="text-indigo-600 dark:text-indigo-400 text-2xl flex-shrink-0">
@@ -113,28 +113,28 @@ export const Contact = () => {
       {/* Contact Information */}
       <section className="max-w-4xl mx-auto bg-white dark:bg-gray-800 rounded-xl shadow-lg overflow-hidden">
         <h2 className="text-3xl font-extrabold px-6 pt-8 pb-4 border-b border-gray-200 dark:border-gray-700">
-          Contact Information
+          Kumno ban contact ia ngi
         </h2>
         <div>
           <ContactItem
             icon={<Mail />}
             title="Email"
             value={email}
-            description="Reach us via email for support or inquiries"
+            description="Kren bad ngi lyngba ka email na ka bynta jingiarap lane jingkylli"
             onClick={openEmail}
           />
           <ContactItem
             icon={<Phone />}
             title="Phone"
             value={phone}
-            description="Call us during office hours"
+            description="Call ia ngi ha ki por treikam"
             onClick={openPhone}
           />
           <ContactItem
             icon={<MapPin />}
-            title="Address"
+            title="Ka jaka treikam"
             value={address}
-            description="Visit our office or find us on the map"
+            description="Wan jngoh ia ka ophis jong ngi ne wad ha ka map"
             onClick={openMap}
             isLast
           />
@@ -142,4 +142,5 @@ export const Contact = () => {
       </section>
     </section>
   );
-};
+}
+;

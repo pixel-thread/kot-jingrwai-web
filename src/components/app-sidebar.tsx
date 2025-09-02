@@ -53,41 +53,41 @@ const data = {
       icon: FolderIcon,
     },
     {
-      title: 'Users',
+      title: 'Ki Nongpyndonkam',
       url: '/users',
       icon: UsersIcon,
     },
   ],
   navSecondary: [
     {
-      title: 'Settings',
+      title: 'Ki Setting',
       url: '#',
       icon: SettingsIcon,
     },
     {
-      title: 'Get Help',
+      title: 'Pyniarap',
       url: '#',
       icon: HelpCircleIcon,
     },
     {
-      title: 'Search',
+      title: 'Wad',
       url: '#',
       icon: SearchIcon,
     },
   ],
   documents: [
     {
-      name: 'Data Library',
+      name: 'Ka Jingthup Data',
       url: '#',
       icon: DatabaseIcon,
     },
     {
-      name: 'Reports',
+      name: 'Ki Ripot',
       url: '#',
       icon: ClipboardListIcon,
     },
     {
-      name: 'Word Assistant',
+      name: 'U Nongiarap Ktien',
       url: '#',
       icon: FileIcon,
     },

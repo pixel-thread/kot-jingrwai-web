@@ -8,9 +8,9 @@ import {
 export const CTA = () => {
   return (
     <section className="bg-indigo-500 text-white py-20 text-center">
-      <h2 className="text-3xl md:text-4xl font-bold">Connect with Us</h2>
+      <h2 className="text-3xl md:text-4xl font-bold">Connect bad ngi</h2>
       <p className="mt-4 text-lg">
-        Follow us on social media to stay updated and engaged.
+        Follow ia ngi ha social media ban ioh update bad kiwei kiwei.
       </p>
       <div className="mt-8 flex flex-col sm:flex-row gap-4 justify-center">
         <Button

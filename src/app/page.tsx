@@ -2,7 +2,6 @@
 
 import { About } from "@/components/page/about";
 import { CTA } from "@/components/page/cta";
-import { Features } from "@/components/page/features";
 import Home from "@/components/page/home";
 import { ShowCase } from "@/components/page/showcase";
 import { Contact } from "@/components/page/contact";
@@ -16,7 +15,6 @@ export default function page() {
       <Home />
       <CTA />
       <About />
-      <Features />
       <ShowCase />
       <Contact />
       <Footer />
